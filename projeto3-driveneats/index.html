@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrivenEats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <h1 class="title">DrivenEats</h1>
+        <h2 class="slogan">Sua comida em 6 minutos</h2>
+    </header>
+    <main>
+        <section class="dish">
+            <h1>Primeiro, seu prato</h1>
+            <div class="container-items">
+                <div class="item" onclick="selectDish(this, 'bouillabaisse', 18.90)">
+                    <img src="images/bouillabaisse.jpg" alt="bouillabaisse">
+                    <p><strong>Bouillabaisse</strong></p>
+                    <p><small>Sopa francesa de frutos do mar</small></p>
+                    <p class="price">R$ 18,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="item" onclick="selectDish(this, 'goulash', 19.90)">
+                    <img src="images/goulash.jpg" alt="goulash">
+                    <p><strong>Goulash</strong></p>
+                    <p><small>Emsopado húngaro a base de carne</small></p>
+                    <p class="price">R$ 19,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="item" onclick="selectDish(this, 'sanduiche', 14.50)">
+                    <img src="images/sanduiche de arminho.jpg" alt="sanduiche">
+                    <p><strong>Sanduíche de Arminho</strong></p>
+                    <p><small>Acompanhado de batatas fritas</small></p>
+                    <p class="price">R$ 14,50</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="item" onclick="selectDish(this, 'pie', 16.70)">
+                    <img src="images/kidney pie.jpg" alt="pie">
+                    <p><strong>Kidney Pie</strong></p>
+                    <p><small>Torta com recheio de rins</small></p>
+                    <p class="price">R$ 16,70</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </section>
+        <section class="drink">
+            <h1>Agora, sua bebida</h1>
+            <div class="container-items">
+                <div class="item" onclick="selectDrink(this, 'cerveja', 4.50)">
+                    <img src="images/cerveja-amanteigada4.jpg" alt="cerveja">
+                    <p><strong>Cerveja Amanteigada</strong></p>
+                    <p><small>400ml</small></p>
+                    <p>R$ 4,50</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="item" onclick="selectDrink(this, 'quentao', 5.90)">
+                    <img src="images/quentão do merlin.jpg" alt="quentao">
+                    <p><strong>Quentão do Merlin</strong></p>
+                    <p><small>350ml</small></p>
+                    <p>R$ 5,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="item" onclick="selectDrink(this, 'rum', 7.00)">
+                    <img src="images/rum de groselha vermelha.jpg" alt="rum">
+                    <p><strong>Rum de Groselha Vermelha</strong></p>
+                    <p><small>400ml</small></p>
+                    <p>R$ 7,00</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="item" onclick="selectDrink(this, 'suco', 4.10)">
+                    <img src="images/suco de abobora.jpg" alt="suco">
+                    <p><strong>Suco de Abóbora</strong></p>
+                    <p><small>400ml</small></p>
+                    <p>R$ 4,10</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </section>
+        <section class="dessert">
+            <h1>Por fim, sua sobremesa</h1>
+            <div class="container-items">
+                <div class="item" onclick="selectDessert(this, 'sapo', 2.50)">
+                    <img src="images/sapo de chocolate.jpg" alt="sapo">
+                    <p><strong>Sapo de Chocolate</strong></p>
+                    <p><samll>Cuidado, pode escapar!</samll></p>
+                    <p>R$ 2,50</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="item" onclick="selectDessert(this, 'feijao', 3.70)">
+                    <img src="images/feijoezinhos-de-todos-os-sabores.jpg" alt="feijao">
+                    <p><strong>Feijões de todos os sabores</strong></p>
+                    <p><samll>Boa sorte!</samll></p>
+                    <p>R$ 3,70</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="item" onclick="selectDessert(this, 'devil', 2.00)">
+                    <img src="images/diabinhos de pimenta.jpg" alt="devil">
+                    <p><strong>Diabinhos de Pimenta</strong></p>
+                    <p><samll>Muito azedo</samll></p>
+                    <p>R$ 2,00</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="item" onclick="selectDessert(this, 'bolo', 5.90)">
+                    <img src="images/bolo de caldeirão.jpg" alt="bolo">
+                    <p><strong>Bolo de Caldeirão</strong></p>
+                    <p><samll>Diversos sabores disponíveis</samll></p>
+                    <p>R$ 5,90</p>
+                    <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </section>        
+    </main>
+    <footer>
+        <button onclick="confirmOrder()" disabled>Selecione os 3 itens para fechar o pedido</button>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
+    <script src="script.js"></script>  
+</body>
+</html>
